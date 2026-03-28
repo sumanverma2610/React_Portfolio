@@ -1,0 +1,142 @@
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #2a0050, #0a001a);
+  color: white;
+  padding: 0 5%;
+}
+/* #root{
+  height: 100%;
+  width: 100%;
+} */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+/* LEFT */
+.home-left {
+  flex: 1;
+}
+
+.intro {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #cfc6ff;
+}
+
+.name {
+  color: #9b5cff;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #9b5cff;
+  border-bottom: 3px solid #9b5cff;
+}
+
+.subtitle {
+  margin-top: 15px;
+  color: #b0a8d9;
+  font-size: 16px;
+}
+
+/* RIGHT IMAGE */
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-wrapper {
+  background: radial-gradient(circle, #5a00ff 0%, transparent 70%);
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.avatar {
+  width: 260px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #1a001f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9b5cff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #9b5cff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+  /* body {
+    display: contents;
+} */
+/* Hide vertical scrollbar but allow scrolling */
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: contents;
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

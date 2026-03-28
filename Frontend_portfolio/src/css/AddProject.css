@@ -1,0 +1,54 @@
+.add-project-section {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #1a002b, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-project-card {
+  width: 420px;
+  background: rgba(128, 0, 255, 0.15);
+  border: 1px solid #7c3aed;
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+}
+
+.add-project-card h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.add-project-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-project-card input,
+.add-project-card textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #7c3aed;
+  background: black;
+  color: white;
+}
+
+.add-project-card textarea {
+  height: 100px;
+}
+
+.add-project-card button {
+  background: #7c3aed;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-project-card button:hover {
+  background: #5b21b6;
+}
